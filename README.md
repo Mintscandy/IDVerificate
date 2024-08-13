@@ -8,7 +8,7 @@ Verification of Chinese Mainland ID Card
 
 ### API
 
-`IDisValid()  `  验证身份证号码是否有效，有效返回true，无效返回false
+`IDisValid()`  验证身份证号码是否有效，有效返回true，无效返回false
 
 `IDCheckCode()` 通过17位身份证号码得出最后一位校验码
 
@@ -26,7 +26,9 @@ Verification of Chinese Mainland ID Card
 
 ### Getting Start
 
-下载 并放到 你需要使用的项目目录。
+```sh
+git clone 
+```
 
 #### 使用方法
 
