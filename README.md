@@ -27,7 +27,7 @@ Verification of Chinese Mainland ID Card
 ### Getting Start
 
 ```sh
-git clone 
+git clone https://github.com/Mintscandy/IDVerificate.git
 ```
 
 #### 使用方法
@@ -47,7 +47,6 @@ let sfz = require('./IDFilter.js');
 
 console.log(sfz.IDisValid("123456789012345678"));
 //身份证号码有效即返回true，无效返回false
-//位数不足将返回undefined
 ```
 
 ##### 得出校验码
@@ -57,7 +56,6 @@ let sfz = require('./IDFilter.js');
 
 console.log(sfz.IDCheckCode("12345678901234567"));
 //返回校验码
-//位数不足返回undefined
 ```
 
 ##### 身份证性别校验
@@ -69,8 +67,6 @@ console.log(sfz.IDisGender("ID",Gender));
 //传入完整身份证号码
 //ID为传入18位完整身份证号码(String),Gender参数为number类型，0为女性，1为男性
 //该函数用于高效筛选身份证
-//undefined则说明传入ID参数错误，请检查
-//null代表Gender参数错误，请检查
 ```
 
 ##### 修复身份证号码
